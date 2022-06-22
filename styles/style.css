@@ -1,0 +1,32 @@
+body {
+    background-color: #041027 !important;
+    margin: 0;
+}
+
+.db-768,
+.db-524 {
+    display: none;
+}
+
+.wrapper__content_white {
+    background-color: #F4F6FA;
+}
+
+/* Mobile
+-----------------------------------------------------------*/
+
+@media screen and (max-width:768px) {
+    .dn-768 {
+        display: none !important;
+    }
+
+    .db-768 {
+        display: block;
+    }
+}
+
+@media screen and (max-width:524px) {
+    .db-524 {
+        display: block;
+    }
+}

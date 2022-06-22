@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<script src="https://rawgit.com/jonathantneal/svg4everybody/master/dist/svg4everybody.js"></script>
+		<script>svg4everybody();</script>
+		<title>SVG &lt;symbol&gt; sprite preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+
+<!--
+
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as inline SVG, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+
+-->
+
+<style type="text/css">
+	.svg-airplane-icon-dims { width: 18px; height: 18px; }
+	.svg-hockey-stick-icon-dims { width: 24.9px; height: 9.1px; }
+	.svg-home-icon-dims { width: 21.7px; height: 18.3px; }
+	.svg-pointer-horizontal-icon-dims { width: 10.5px; height: 9px; }
+	.svg-present-icon-dims { width: 19px; height: 18.1px; }
+	.svg-slide-arrow-dims { width: 22px; height: 13px; }
+	.svg-slider-arrow-dims { width: 8px; height: 15px; }
+	.svg-slider-arrow-1-dims { width: 36px; height: 14px; }
+	.svg-ticket-icon-dims { width: 20.5px; height: 20.5px; }
+	.svg-view-line-icon-dims { width: 26px; height: 18px; }
+	.svg-view-table-icon-dims { width: 26px; height: 18px; }
+</style>
+<!--
+====================================================================================================
+-->
+
+	</head>
+	<body>
+
+<!--
+
+Inline <symbol> SVG sprite
+====================================================================================================
+This is an inlined version of the generated SVG sprite. The single images may be <use>d everywhere
+below within this document. Please see
+
+	https://github.com/svg-sprite/svg-sprite/blob/1.5.x/docs/configuration.md#defs--symbol-mode
+
+for further details on how to create this embeddable sprite variant.
+
+-->
+
+<svg width="0" height="0" style="position:absolute">
+		<symbol viewBox="0 0 18 18" id="airplane-icon" xmlns="http://www.w3.org/2000/svg"><path d="M14.3 17.6l1.6-1.6-2.4-9.3 3.8-3.8c.7-.7.8-1.8.2-2.4-.6-.6-1.7-.5-2.4.2l-3.8 3.8L2 2 .4 3.7l7.3 4.4L4 11.7 1.1 11 0 12.1l3.7 2.2L5.9 18 7 16.9 6.3 14l3.7-3.7 4.3 7.3z"/></symbol>
+		<symbol viewBox="0 0 24.9 9.1" id="hockey-stick-icon" xmlns="http://www.w3.org/2000/svg"><path d="M17.8 6H0v3H15.3l5.1.1 4.5-5.4L22.8 0z"/></symbol>
+		<symbol viewBox="0 0 21.7 18.3" id="home-icon" xmlns="http://www.w3.org/2000/svg"><path d="M17.8 7.1V2h-3v2l-3.9-4L0 11.1h2.6v7.2h6.7v-5.9h3v5.9H19v-7.2h2.6l-3.8-4z"/></symbol>
+		<symbol viewBox="0 0 10.5 9" id="pointer-horizontal-icon" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 4.5h10m0 0l-4-4m4 4l-4 4"/></symbol>
+		<symbol viewBox="0 0 19 18.1" id="present-icon" xmlns="http://www.w3.org/2000/svg"><path d="M17.1 10.5v6.7c0 .3-.1.5-.3.7-.2.2-.4.3-.7.3H2.9c-.3 0-.5-.1-.7-.3-.2-.2-.3-.4-.3-.7v-6.6l15.2-.1zM11.9 0c1.1 0 2.2.6 2.8 1.5.6 1 .7 2.2.2 3.2h3.2c.3 0 .5.1.7.3.1.2.2.5.2.7v2.9c0 .3-.1.5-.3.7-.2.2-.4.3-.7.3H.9c-.3 0-.5-.1-.7-.3C.1 9 0 8.8 0 8.6V5.7c0-.2.1-.5.3-.7.2-.2.4-.3.7-.3h3.2c-.5-1-.4-2.1.1-3C4.7.8 5.6.2 6.7 0c1-.1 2.1.2 2.8 1 .6-.6 1.5-1 2.4-1zM7.1 1.9c-.5 0-1 .3-1.2.7-.2.4-.3.9-.1 1.4.3.4.7.7 1.2.7h1.5V3.3c0-.4-.1-.7-.4-1-.2-.2-.5-.4-.8-.4h-.2zm4.8 0h-.1c-.3 0-.6.2-.9.4-.2.2-.4.5-.4.9v1.5H12c.5 0 .9-.3 1.1-.7.2-.4.2-.9 0-1.3-.2-.5-.6-.7-1.1-.8h-.1z"/></symbol>
+		<symbol fill="none" viewBox="0 0 22 13" id="slide-arrow" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l10 10L21 1" stroke="#0C1931" stroke-width="2"/></symbol>
+		<symbol fill="currentColor" viewBox="0 0 8 15" id="slider-arrow" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.001 7.5L0 1.07 1 0l7 7.5L1 15l-1-1.07L6.001 7.5z"/></symbol>
+		<symbol fill="none" viewBox="0 0 36 14" id="slider-arrow-1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M28.762.296L35.408 7l-6.646 6.704-1.42-1.408L31.6 8H0V6h31.6l-4.258-4.296 1.42-1.408z" fill="#F4F6FA"/></symbol>
+		<symbol viewBox="0 0 20.5 20.5" id="ticket-icon" xmlns="http://www.w3.org/2000/svg"><path d="M8.3 20.5c-.2 0-.4-.1-.5-.2l-2.2-2.2c-.3-.3-.3-.7-.1-1 .2-.3.3-.6.3-1s-.2-.7-.4-.9c-.3-.3-.6-.4-.9-.4-.3 0-.7.1-1 .3-.3.2-.7.2-1-.1L.3 12.8c-.3-.3-.3-.8 0-1.1L11.7.2c.3-.3.8-.3 1.1 0L15 2.4c.3.3.3.7.1 1-.2.3-.3.6-.3 1s.2.7.4.9c.3.3.6.4.9.4.4 0 .7-.1 1-.3.3-.2.7-.2 1 .1l2.2 2.2c.3.3.3.8 0 1.1L8.8 20.3c-.2.1-.4.2-.5.2zM7 17.4l1.3 1.3L18.7 8.3 17.4 7c-.4.2-.9.3-1.4.3-.7 0-1.4-.3-1.9-.9-.5-.5-.8-1.2-.9-1.9 0-.5.1-1 .3-1.4l-1.3-1.3L1.8 12.2l1.3 1.3c.4-.2.9-.3 1.4-.3.7 0 1.4.3 1.9.9.5.5.8 1.2.9 1.9 0 .5-.1 1-.3 1.4z"/><path d="M9.6 16.5c-.2 0-.4-.1-.5-.2l-.4-.4c-.3-.3-.3-.8 0-1.1.3-.3.8-.3 1.1 0l.4.4c.3.3.3.8 0 1.1-.2.1-.4.2-.6.2zm-1.8-1.7c-.2 0-.4-.1-.5-.2l-.4-.4c-.1-.1-.2-.3-.2-.5s.1-.4.2-.5c.3-.3.8-.3 1.1 0l.4.4c.1.1.2.3.2.5s-.1.4-.2.5-.4.2-.6.2zM6 13c-.2 0-.4-.1-.5-.2l-.4-.4c-.1-.1-.2-.3-.2-.5s.1-.4.2-.5c.3-.3.8-.3 1.1 0l.4.4c.1.1.2.3.2.5s-.1.4-.2.5-.4.2-.6.2zm10.6-1.8c-.2 0-.4-.1-.5-.2l-.4-.4c-.1-.1-.2-.3-.2-.5s.1-.4.2-.5c.3-.3.8-.3 1.1 0l.4.4c.1.1.2.3.2.5s-.1.4-.2.5-.4.2-.6.2zm-12.3 0c-.2 0-.4-.1-.5-.2l-.4-.4c-.1-.1-.2-.3-.2-.5s.1-.4.2-.5c.3-.3.8-.3 1.1 0l.4.4c.1.1.1.3.1.5s0 .4-.2.5-.3.2-.5.2zm10.6-1.8c-.2 0-.4-.1-.5-.2l-.4-.4c-.1-.1-.2-.3-.2-.5s.1-.4.2-.5c.3-.3.8-.3 1.1 0l.4.4c.1.1.2.3.2.5s-.1.4-.2.5-.4.2-.6.2zm-1.8-1.7c-.2 0-.4-.1-.5-.2l-.4-.5c-.1-.1-.2-.3-.2-.5s0-.4.2-.5c.3-.3.8-.3 1.1 0l.4.4c.1.1.2.3.2.5s-.1.4-.2.5c-.2.2-.4.3-.6.3zm-1.7-1.8c-.2 0-.4-.1-.5-.2l-.4-.4c-.1-.1-.2-.3-.2-.5s.1-.4.2-.5c.3-.3.8-.3 1.1 0l.4.4c0 .1.1.3.1.5s-.1.4-.2.5c-.2.2-.3.2-.5.2z"/></symbol>
+		<symbol viewBox="0 0 26 18" id="view-line-icon" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26 0H0v4h26V0zm0 7H0v4h26V7zM0 14h26v4H0v-4z"/></symbol>
+		<symbol viewBox="0 0 26 18" id="view-table-icon" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h7.3v4H0V0zM0 7h7.3v4H0V7zM7.3 14H0v4h7.3v-4zM9.4 0h7.3v4H9.4V0zM16.6 7H9.4v4h7.3V7zM9.4 14h7.3v4H9.4v-4zM26 0h-7.3v4H26V0zM18.7 7H26v4h-7.3V7zM26 14h-7.3v4H26v-4z"/></symbol>
+</svg>
+
+<!--
+====================================================================================================
+-->
+
+		<header>
+			<h1>SVG <code>&lt;symbol&gt;</code> sprite preview</h1>
+			<p>This preview features two methods of using the generated sprite in conjunction with inline SVG. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+			<ul>
+				<li>Your browser has to <a href="http://caniuse.com/#feat=svg-html5" target="_blank" rel="noopener noreferrer">support inline SVG</a> for these techniques to work.</li>
+				<li>The embedded sprite (A) slightly differs from the generated external one. Please <a href="https://github.com/svg-sprite/svg-sprite/blob/1.5.x/docs/configuration.md#defs--symbol-mode" target="_blank" rel="noopener noreferrer">see the documentation</a> for details on how to create such an embeddable sprite.</li>
+				<li>Internet Explorer up to version 11 doesn't support external sprites for use with inline SVG. For IE 9-11, you may polyfill this functionality with <a href="https://github.com/jonathantneal/svg4everybody" target="_blank" rel="noopener noreferrer">SVG for Everybody</a>.</li>
+			</ul>
+		</header>
+		<section>
+
+<!--
+
+A) Inline SVG with embedded sprite
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) and are extracted out of the inline sprite
+embedded above. They may be styled via CSS.
+
+-->
+
+			<h3>A) Inline SVG with embedded sprite</h3>
+			<ul>
+
+				<li title="airplane-icon">
+					<div class="icon-box">
+
+						<!-- airplane-icon -->
+						<svg class="svg-airplane-icon-dims">
+							<use xlink:href="#airplane-icon"></use>
+						</svg>
+
+					</div>
+					<h2>airplane-icon</h2>
+				</li>
+				<li title="hockey-stick-icon">
+					<div class="icon-box">
+
+						<!-- hockey-stick-icon -->
+						<svg class="svg-hockey-stick-icon-dims">
+							<use xlink:href="#hockey-stick-icon"></use>
+						</svg>
+
+					</div>
+					<h2>hockey-stick-icon</h2>
+				</li>
+				<li title="home-icon">
+					<div class="icon-box">
+
+						<!-- home-icon -->
+						<svg class="svg-home-icon-dims">
+							<use xlink:href="#home-icon"></use>
+						</svg>
+
+					</div>
+					<h2>home-icon</h2>
+				</li>
+				<li title="pointer-horizontal-icon">
+					<div class="icon-box">
+
+						<!-- pointer-horizontal-icon -->
+						<svg class="svg-pointer-horizontal-icon-dims">
+							<use xlink:href="#pointer-horizontal-icon"></use>
+						</svg>
+
+					</div>
+					<h2>pointer-horizontal-icon</h2>
+				</li>
+				<li title="present-icon">
+					<div class="icon-box">
+
+						<!-- present-icon -->
+						<svg class="svg-present-icon-dims">
+							<use xlink:href="#present-icon"></use>
+						</svg>
+
+					</div>
+					<h2>present-icon</h2>
+				</li>
+				<li title="slide-arrow">
+					<div class="icon-box">
+
+						<!-- slide-arrow -->
+						<svg class="svg-slide-arrow-dims">
+							<use xlink:href="#slide-arrow"></use>
+						</svg>
+
+					</div>
+					<h2>slide-arrow</h2>
+				</li>
+				<li title="slider-arrow">
+					<div class="icon-box">
+
+						<!-- slider-arrow -->
+						<svg class="svg-slider-arrow-dims">
+							<use xlink:href="#slider-arrow"></use>
+						</svg>
+
+					</div>
+					<h2>slider-arrow</h2>
+				</li>
+				<li title="slider-arrow-1">
+					<div class="icon-box">
+
+						<!-- slider-arrow-1 -->
+						<svg class="svg-slider-arrow-1-dims">
+							<use xlink:href="#slider-arrow-1"></use>
+						</svg>
+
+					</div>
+					<h2>slider-arrow-1</h2>
+				</li>
+				<li title="ticket-icon">
+					<div class="icon-box">
+
+						<!-- ticket-icon -->
+						<svg class="svg-ticket-icon-dims">
+							<use xlink:href="#ticket-icon"></use>
+						</svg>
+
+					</div>
+					<h2>ticket-icon</h2>
+				</li>
+				<li title="view-line-icon">
+					<div class="icon-box">
+
+						<!-- view-line-icon -->
+						<svg class="svg-view-line-icon-dims">
+							<use xlink:href="#view-line-icon"></use>
+						</svg>
+
+					</div>
+					<h2>view-line-icon</h2>
+				</li>
+				<li title="view-table-icon">
+					<div class="icon-box">
+
+						<!-- view-table-icon -->
+						<svg class="svg-view-table-icon-dims">
+							<use xlink:href="#view-table-icon"></use>
+						</svg>
+
+					</div>
+					<h2>view-table-icon</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<section>
+
+<!--
+
+B) Inline SVG with external sprite (IE 9-11 with polyfill only)
+====================================================================================================
+These SVG images make use of an URL + fragment identifiers (IDs) and refer to the regular external
+SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
+
+-->
+
+			<h3>B) Inline SVG with external sprite (IE 9-11 with polyfill only)</h3>
+			<ul>
+
+				<li title="airplane-icon">
+					<div class="icon-box">
+
+						<!-- airplane-icon -->
+						<svg class="svg-airplane-icon-dims">
+							<use xlink:href="svgsprites.svg#airplane-icon"></use>
+						</svg>
+
+					</div>
+					<h2>airplane-icon</h2>
+				</li>
+				<li title="hockey-stick-icon">
+					<div class="icon-box">
+
+						<!-- hockey-stick-icon -->
+						<svg class="svg-hockey-stick-icon-dims">
+							<use xlink:href="svgsprites.svg#hockey-stick-icon"></use>
+						</svg>
+
+					</div>
+					<h2>hockey-stick-icon</h2>
+				</li>
+				<li title="home-icon">
+					<div class="icon-box">
+
+						<!-- home-icon -->
+						<svg class="svg-home-icon-dims">
+							<use xlink:href="svgsprites.svg#home-icon"></use>
+						</svg>
+
+					</div>
+					<h2>home-icon</h2>
+				</li>
+				<li title="pointer-horizontal-icon">
+					<div class="icon-box">
+
+						<!-- pointer-horizontal-icon -->
+						<svg class="svg-pointer-horizontal-icon-dims">
+							<use xlink:href="svgsprites.svg#pointer-horizontal-icon"></use>
+						</svg>
+
+					</div>
+					<h2>pointer-horizontal-icon</h2>
+				</li>
+				<li title="present-icon">
+					<div class="icon-box">
+
+						<!-- present-icon -->
+						<svg class="svg-present-icon-dims">
+							<use xlink:href="svgsprites.svg#present-icon"></use>
+						</svg>
+
+					</div>
+					<h2>present-icon</h2>
+				</li>
+				<li title="slide-arrow">
+					<div class="icon-box">
+
+						<!-- slide-arrow -->
+						<svg class="svg-slide-arrow-dims">
+							<use xlink:href="svgsprites.svg#slide-arrow"></use>
+						</svg>
+
+					</div>
+					<h2>slide-arrow</h2>
+				</li>
+				<li title="slider-arrow">
+					<div class="icon-box">
+
+						<!-- slider-arrow -->
+						<svg class="svg-slider-arrow-dims">
+							<use xlink:href="svgsprites.svg#slider-arrow"></use>
+						</svg>
+
+					</div>
+					<h2>slider-arrow</h2>
+				</li>
+				<li title="slider-arrow-1">
+					<div class="icon-box">
+
+						<!-- slider-arrow-1 -->
+						<svg class="svg-slider-arrow-1-dims">
+							<use xlink:href="svgsprites.svg#slider-arrow-1"></use>
+						</svg>
+
+					</div>
+					<h2>slider-arrow-1</h2>
+				</li>
+				<li title="ticket-icon">
+					<div class="icon-box">
+
+						<!-- ticket-icon -->
+						<svg class="svg-ticket-icon-dims">
+							<use xlink:href="svgsprites.svg#ticket-icon"></use>
+						</svg>
+
+					</div>
+					<h2>ticket-icon</h2>
+				</li>
+				<li title="view-line-icon">
+					<div class="icon-box">
+
+						<!-- view-line-icon -->
+						<svg class="svg-view-line-icon-dims">
+							<use xlink:href="svgsprites.svg#view-line-icon"></use>
+						</svg>
+
+					</div>
+					<h2>view-line-icon</h2>
+				</li>
+				<li title="view-table-icon">
+					<div class="icon-box">
+
+						<!-- view-table-icon -->
+						<svg class="svg-view-table-icon-dims">
+							<use xlink:href="svgsprites.svg#view-table-icon"></use>
+						</svg>
+
+					</div>
+					<h2>view-table-icon</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<footer>
+			<p>Generated at Sun, 19 Jun 2022 06:34:36 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+		</footer>
+	</body>
+</html>

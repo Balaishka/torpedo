@@ -1,0 +1,164 @@
+/* Halvar Engschrift */
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-ExtraThin.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-ThinItalic.ttf) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-ExtraThin.ttf) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-ExtraThinItalic.ttf) format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-LightItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-RegularItalic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-MediumItalic.ttf) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-BoldItalic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-ExtraBold.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-ExtraBoldItalic.ttf) format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-Black.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halvar Engschrift';
+    src: url(../fonts/HalvarEngschrift/HalvarEngschrift-BlackItalic.ttf) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Manrope */
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../fonts/Manrope/Manrope-ExtraLight.ttf) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../fonts/Manrope/Manrope-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../fonts/Manrope/Manrope-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../fonts/Manrope/Manrope-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../fonts/Manrope/Manrope-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../fonts/Manrope/Manrope-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../fonts/Manrope/Manrope-ExtraBold.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}

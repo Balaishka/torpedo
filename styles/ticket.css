@@ -1,0 +1,76 @@
+.ticket {
+    background: url(../images/ticket.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px 16px 18px;
+    min-width: 280px;
+    box-sizing: border-box;
+}
+
+.ticket__title {
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #0C1931;
+    margin: 0 0 4px;
+    max-width: 140px;
+}
+
+.ticket__subtitle {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #8D97A8;
+    margin: 0;
+    max-width: 140px;
+}
+
+.ticket__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100px;
+    min-width: 90px;
+}
+
+.ticket__price-value {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #0C1931;
+    margin-right: 6px;
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+}
+
+.ticket__delete {
+    cursor: pointer;
+}
+
+/* Mobile
+-----------------------------------------------------------*/
+
+@media screen and (max-width:1479px) {
+    .ticket {
+        min-width: 314px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .ticket {
+        min-width: 280px;
+    }
+}

@@ -1,0 +1,145 @@
+.sector {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    background-color: #fff;
+    max-width: 300px;
+}
+
+.sector__header {
+    position: relative;
+    padding: 16px 32px 16px 20px;
+}
+
+.sector__close {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    cursor: pointer;
+}
+
+.sector__title {
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #0C1931;
+    margin: 0;
+}
+
+.sector__subtitle {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #8D97A8;
+    margin: 0;
+}
+
+.sector__photo {
+    width: 100%;
+}
+
+.sector__price {
+    padding: 16px 24px 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sector__price-text {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #8D97A8;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.sector__price-value {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    color: #0C1931;
+    margin: 0;
+}
+
+.sector__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 28px;
+    background-color: #C8102E;
+    text-decoration: none;
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #F4F6FA;
+}
+
+.sector .sector__button {
+    transition: background-color .2s, color .2s !important;
+}
+
+.sector__button:hover {
+    color: #f4f6fa;
+    background-color: #940a1e;
+}
+
+.sector-table__arrow {
+    width: 6px;
+    height: 11px;
+}
+
+/* Mobile
+-----------------------------------------------------------*/
+
+@media screen and (max-width:1479px) {
+    .sector {
+        top: 24px;
+        right: 24px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .sector {
+        right: 0;
+    }
+}
+
+@media screen and (max-width:524px) {
+    .sector {
+        position: static;
+        max-width: 100%;
+        background-color: #EBEEF3;
+        padding-bottom: 16px;
+        margin-top: 24px;
+    }
+
+    .sector__close {
+        top: 20px;
+        right: 20px;
+    }
+
+    .sector__subtitle {
+        margin-top: 4px;
+    }
+
+    .sector__price {
+        padding: 14px 20px;
+    }
+
+    .sector__button {
+        margin: 0 20px;
+    }
+}

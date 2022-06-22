@@ -1,0 +1,230 @@
+.order-info__title {
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #F4F6FA;
+    margin: 0 0 28px;
+}
+
+.order-info__list {
+    list-style: none;
+    padding: 0 0 24px;
+    display: grid;
+    grid-gap: 8px;
+}
+
+.order-info__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-info__total-text {
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #F4F6FA;
+    padding-bottom: 8px;
+}
+
+.order-info__total-price {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.27;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #F4F6FA;
+}
+
+.order-info__item-text {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #8D97A8;
+}
+
+.order-info__item-price {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: right;
+    color: #F4F6FA;
+}
+
+.order-info__item-price_minus {
+    color: #C8102E;
+}
+
+.order-info__block {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(244, 246, 250, .1);
+}
+
+.order-info__text-title {
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #F4F6FA;
+    opacity: 0.5;
+    margin: 0 10px 0 0;
+}
+
+.order-info__text-choice {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #F4F6FA;
+    margin: 0;
+}
+
+.order-info__bonuses {
+    background-color: rgba(244, 246, 250, 0.04);
+    display: flex;
+    align-items: center;
+    margin: 32px 0 46px;
+    padding: 8px 12px;
+    width: max-content;
+    max-width: 100%;
+}
+
+.order-info__bonuses-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+}
+
+.order-info__bonuses-text {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: rgba(244, 246, 250, 0.5);
+    margin: 0;
+}
+
+.order-info__bonuses-total {
+    color: rgba(244, 246, 250, 1);
+    margin-left: 5px;
+}
+
+.order-info__button {
+    background-color: #C8102E;
+    padding: 22px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #F4F6FA;
+    width: 280px;
+    max-width: 100%;
+}
+
+.order-info__button:hover {
+    color: #f4f6fa;
+    background-color: #940a1e;
+}
+
+.order-info__button-img {
+    width: 6px;
+    height: 10px;
+}
+
+/* Mobile
+-----------------------------------------------------------*/
+
+@media screen and (max-width:1479px) {
+    .order-info__title {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .order-info__total-price {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    
+    .order-info__item-price {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .order-info__text-choice {
+        font-size: 16px;
+        line-height: 1.56;
+    }
+    
+    .order-info__bonuses {
+        margin: 24px 0 32px;
+    }
+    
+    .order-info__bonuses-img {
+        margin-right: 12px;
+    }
+    
+    .order-info__button {
+        padding: 18px 26px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .order-info__title {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .order-info__title {
+        margin-bottom: 28px;
+    }
+
+    .order-info__block {
+        display: grid;
+        grid-gap: 4px;
+    }
+
+    .order-info__text-title {
+        margin-right: 0;
+    }
+
+    .order-info__bonuses {
+        margin: 12px 0 16px; 
+    }
+
+    .order-info__bonuses-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .order-info__button {
+        width: 100%;
+        max-width: 320px;
+    }
+}

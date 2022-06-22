@@ -1,0 +1,138 @@
+.main {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto 120px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.main-header {
+    padding: 46px 0 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    margin-bottom: 42px;
+}
+
+.main-header__title {
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #F4F6FA;
+    margin: 0 0 24px;
+}
+
+.main-header__number {
+    opacity: .5;
+}
+
+.main-header__steps {
+    display: grid;
+    grid-template-columns: 1fr 37px 1fr 37px 1fr;
+    list-style: none;
+    padding: 0 0 0 35px;
+    margin: 0;
+}
+
+.main-header__step {
+    background-color: #0C1931;
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: rgba(244, 246, 250, .24);
+    padding: 17px;
+    box-sizing: border-box;
+    margin-left: -35px;
+}
+
+.main-header__step_active {
+    background-color: #C8102E;
+    color: #F4F6FA;
+}
+
+.main-header__step_fill {
+    color: rgba(244, 246, 250, 1);
+}
+
+.main-header__step span {
+    margin-right: 5px;
+}
+
+.main-header__step_active span,
+.main-header__step_fill span {
+    opacity: .5;
+}
+
+.main-header__arrow {
+    position: relative;
+    left: -20px;
+    z-index: 2;
+}
+
+.main-header__arrow img {
+    height: 100%;
+}
+
+/* Mobile
+-----------------------------------------------------------*/
+
+@media screen and (max-width:1479px) {
+    .main {
+        max-width: 1140px;
+        margin-bottom: 80px;
+    }
+
+    .main-header {
+        padding: 40px 0 20px;
+        margin-bottom: 32px;
+    }
+    
+    .main-header__title {
+        font-size: 32px;
+        line-height: 37px;
+    }
+    
+    .main-header__step {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main {
+        max-width: 708px;
+    }
+
+    .main-header {
+        padding: 40px 0 16px;
+    }
+}
+
+@media screen and (max-width:524px) {
+    .main {
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+
+    .main-header {
+        padding: 30px 0 16px;
+        margin: 0 22px 24px;
+    }
+
+    .main-header__title {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .main-header__step {
+        padding: 12px;
+    }
+}

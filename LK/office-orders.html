@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Личный кабинет – Заказы :: Torpedo Shop</title>
+    <!--
+    link(rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
+    link(rel="manifest" href="assets/site.webmanifest")
+    link(rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff")
+    link(rel="shortcut icon" href="assets/favicon.ico")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-config" content="assets/browserconfig.xml")
+    meta(name="theme-color" content="#ffffff")
+    
+    -->
+    <!--
+    meta(name="description" content="Description")
+    meta(property="og:url" content="https://")
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=pagetitle)
+    meta(property="twitter:title" content=pagetitle)
+    meta(property="og:description" content="description")
+    meta(property="twitter:description" content="description")
+    meta(property="og:image" content="assets/share.png")
+    
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__head">
+        <div class="header__head__inner">
+          <div class="header__head__left"><span class="header__head__muted">Оф. магазин: </span>Нижний Новгород, пр-т Гагарина, 29</div>
+          <div class="header__head__right">
+            <div class="header__head__menu"> <a class="header__head__link" href="#">Оплата</a><a class="header__head__link" href="#">Доставка</a><a class="header__head__link" href="#">Контакты</a></div><a class="header__head__link" href="tel:+79307111946">+7 (930) 711-19-46</a>
+            <button class="js-popup header__head__link" data-href="#login"> <i class="icon-user"> </i>Войти на сайт</button>
+          </div>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="header__main__container">
+          <div class="header__main__inner">
+            <button class="header__main__toggler js-menu-toggler">
+                  <svg class="svgsprite _hockey-stick-icon">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#hockey-stick-icon"></use>
+                  </svg>
+                  <svg class="svgsprite _hockey-stick-icon">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#hockey-stick-icon"></use>
+                  </svg>
+            </button>
+            <form class="header__main__search js-header-search">
+              <input class="header__main__search__input" placeholder="Искать товары"><i class="icon-search"></i>
+            </form><a class="header__main__logo" href="index.html"><img src="assets/img/logo.svg" alt=""></a>
+            <div class="header__main__btns"><a class="header__main__btn _site" href="#"><span class="header__main__btn__inner">Сайт ХК торпедо<i class="icon-link-arrow"></i></span></a><a class="header__main__btn _fav" href="#"><i class="icon-star-filled"> </i><span class="header__main__btn__inner">Избранное</span></a><a class="header__main__btn" href="#"><i class="icon-basket"></i><span class="header__main__btn__inner">Корзина</span></a>
+              <div class="header__main__btns__incart js-incart">
+                <div class="header-incart">
+                  <div class="header-incart__h">Товар в корзине</div>
+                  <div class="header-incart__content">
+                    <div class="header-incart__photo">
+                      <div class="header-incart__picture-wrapper">
+                        <picture class="header-incart__picture"> 
+                          <source type="image/webp" src="assets/img/catalog/1.webp"><img src="assets/img/catalog/1.png" alt="">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="header-incart__product">
+                      <div class="header-incart__product__cat">Хоккейный свитер </div>
+                      <div class="header-incart__product__h">ХК Торпедо НН сине‑белый</div>
+                      <div class="header-incart__product__price">43 800 ₽</div>
+                      <div class="header-incart__product__text">XS (RU 40/42)</div>
+                    </div>
+                  </div><a class="btn _arrow header-incart__btn" href="#">Оформить заказ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <div class="header__nav__cnt">
+          <ul class="header__nav__inner">
+            <li class="header__nav__item js-header-nav"><a class="header__nav__link" href="#">Мужчинам</a>
+                  <div class="header-dropdown">
+                    <h4 class="header-dropdown__h">Мужчинам</h4>
+                    <div class="header-dropdown__list"><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-1.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-1.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Верхняя одежда</span><span class="header-dropdown__item__muted">11 моделей</span></a><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-2.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-2.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Футболки и поло</span><span class="header-dropdown__item__muted">16 моделей</span></a><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-3.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-3.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Головные уборы</span><span class="header-dropdown__item__muted">15 моделей</span></a><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-1.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-1.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Толстовки и худи</span><span class="header-dropdown__item__muted">12 моделей</span></a><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-4.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-4.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Реплики хоккейных свитеров</span><span class="header-dropdown__item__muted">11 моделей</span></a><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-5.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-5.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Брюки и шорты</span><span class="header-dropdown__item__muted">6 моделей</span></a></div><a class="header-dropdown__more" href="#">Вся атрибутика для мужчин</a>
+                  </div>
+            </li>
+            <li class="header__nav__item"><a class="header__nav__link" href="#">Женщинам</a></li>
+            <li class="header__nav__item js-header-nav"><a class="header__nav__link" href="#">Детям</a>
+                  <div class="header-dropdown">
+                    <h4 class="header-dropdown__h">Детям</h4>
+                    <div class="header-dropdown__list"><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-1.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-1.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Верхняя одежда</span><span class="header-dropdown__item__muted">11 моделей</span></a><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-2.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-2.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Футболки и поло</span><span class="header-dropdown__item__muted">16 моделей</span></a><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-3.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-3.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Головные уборы</span><span class="header-dropdown__item__muted">15 моделей</span></a><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-1.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-1.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Толстовки и худи</span><span class="header-dropdown__item__muted">12 моделей</span></a><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-4.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-4.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Реплики хоккейных свитеров</span><span class="header-dropdown__item__muted">11 моделей</span></a><a class="header-dropdown__item" href="#"><span class="header-dropdown__item__picture-wrapper">
+                          <picture class="header-dropdown__item__picture"> 
+                            <source type="image/webp" data-srcset="assets/img/catalog/header-5.webp" src="assets/img/dot.webp"><img class="lazyload lazypreload" data-src="assets/img/catalog/header-5.png" src="assets/img/dot.png" alt="">
+                          </picture></span><span class="header-dropdown__item__h">Брюки и шорты</span><span class="header-dropdown__item__muted">6 моделей</span></a></div><a class="header-dropdown__more" href="#">Вся атрибутика для мужчин</a>
+                  </div>
+            </li>
+            <li class="header__nav__item"><a class="header__nav__link" href="#">Головные уборы</a></li>
+            <li class="header__nav__item"><a class="header__nav__link" href="#">Джерси</a></li>
+            <li class="header__nav__item"><a class="header__nav__link" href="#">Сувениры</a></li>
+            <li class="header__nav__item"><a class="header__nav__link" href="#">Аксессуары</a></li>
+            <li class="header__nav__item"><a class="header__nav__link" href="#">Распродажа</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="menu js-menu"> 
+      <div class="menu__head">
+        <button class="js-popup menu__btn" data-href="#login"> <i class="icon-user"></i>Войти на сайт</button>
+        <form class="menu__search">
+          <input class="menu__search__input" placeholder="Искать товары"><i class="icon-search"></i>
+        </form>
+      </div>
+      <ul class="menu__cats">
+        <li class="menu__cats__item _sub js-menu-sub"><a class="menu__cats__link" href="#">Мужчинам</a>
+              <div class="menu-dropdown">
+                <div class="menu-dropdown__head">
+                  <button class="menu-dropdown__btn js-menu-sub-close"><i class="icon-menu-back"></i></button>
+                  <div class="menu-dropdown__h">Мужчинам</div>
+                </div>
+                <div class="menu-dropdown__list"><a class="menu-dropdown__list__link" href="#">Брюки и шорты</a><a class="menu-dropdown__list__link" href="#">Верхняя одежда</a><a class="menu-dropdown__list__link" href="#">Толстовки и худи</a><a class="menu-dropdown__list__link" href="#">Футболки и поло</a><a class="menu-dropdown__list__link" href="#">Головные уборы</a><a class="menu-dropdown__list__link" href="#">Реплики хоккейных свитеров</a></div>
+              </div>
+        </li>
+        <li class="menu__cats__item _sub js-menu-sub"><a class="menu__cats__link" href="#">Женщинам</a>
+              <div class="menu-dropdown">
+                <div class="menu-dropdown__head">
+                  <button class="menu-dropdown__btn js-menu-sub-close"><i class="icon-menu-back"></i></button>
+                  <div class="menu-dropdown__h">Женщинам</div>
+                </div>
+                <div class="menu-dropdown__list"><a class="menu-dropdown__list__link" href="#">Брюки и шорты</a><a class="menu-dropdown__list__link" href="#">Верхняя одежда</a><a class="menu-dropdown__list__link" href="#">Толстовки и худи</a><a class="menu-dropdown__list__link" href="#">Футболки и поло</a><a class="menu-dropdown__list__link" href="#">Головные уборы</a><a class="menu-dropdown__list__link" href="#">Реплики хоккейных свитеров</a></div>
+              </div>
+        </li>
+        <li class="menu__cats__item _sub js-menu-sub"><a class="menu__cats__link" href="#">Детям</a>
+              <div class="menu-dropdown">
+                <div class="menu-dropdown__head">
+                  <button class="menu-dropdown__btn js-menu-sub-close"><i class="icon-menu-back"></i></button>
+                  <div class="menu-dropdown__h">Детям</div>
+                </div>
+                <div class="menu-dropdown__list"><a class="menu-dropdown__list__link" href="#">Брюки и шорты</a><a class="menu-dropdown__list__link" href="#">Верхняя одежда</a><a class="menu-dropdown__list__link" href="#">Толстовки и худи</a><a class="menu-dropdown__list__link" href="#">Футболки и поло</a><a class="menu-dropdown__list__link" href="#">Головные уборы</a><a class="menu-dropdown__list__link" href="#">Реплики хоккейных свитеров</a></div>
+              </div>
+        </li>
+        <li class="menu__cats__item"><a class="menu__cats__link" href="#">Головные уборы</a></li>
+        <li class="menu__cats__item"><a class="menu__cats__link" href="#">Джерси</a></li>
+        <li class="menu__cats__item"><a class="menu__cats__link" href="#">Сувениры</a></li>
+        <li class="menu__cats__item"><a class="menu__cats__link" href="#">Аксессуары</a></li>
+        <li class="menu__cats__item"><a class="menu__cats__link" href="#">Распродажа</a></li>
+      </ul>
+      <div class="menu__nav"><a class="menu__nav__link _site" href="#">Сайт ХК торпедо<i class="icon-link-arrow-light"></i></a><a class="menu__nav__link" href="#">Оплата</a><a class="menu__nav__link" href="#">Доставка</a><a class="menu__nav__link" href="#">Контакты</a></div>
+      <p class="menu__address"><span class="menu__address__small">Мы находимся по адресу:</span>Нижний Новгород, пр‑т Гагарина, 29</p>
+      <p class="menu__phone"><span class="menu__address__small">Телефон:</span><a href="tel:+79307111946">+7 (930) 711-19-46</a></p>
+      <div class="menu__rte"> 
+        <p>2003-2022 Автономная некоммерческая организация Хоккейный клуб «Торпедо»</p>
+        <p>Оператор по организации продажи билетов АНО ХК «Торпедо»</p>
+        <p>Использование фото и видео материалов допускается только с согласия пресс-службы.</p>
+        <p>Билетная система - ООО «ИнфоТех» ®</p>
+      </div>
+      <div class="menu__policy"><a href="#">Политика обработки персональных данных</a><a href="#">Политика конфиденциальности</a></div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="office-header">
+          <h1 class="h1">Личный кабинет</h1><a class="office-header__logout" href="#"><i class="icon-logout"></i>Выйти</a>
+          <div class="office-header__nav">
+            <div class="office-header__nav__inner js-office-header"><a class="_active office-header__nav__link" href="office-orders.html">Заказы</a><a class="office-header__nav__link" href="office-bonuses.html">Бонусы</a><a class="office-header__nav__link" href="office-tickets.html">Билеты на матч</a><a class="office-header__nav__link" href="office-season-tickets.html">Абонементы</a><a class="office-header__nav__link" href="office-profile.html">Личные данные</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="block">
+          <div class="office-slide-list">
+            <div class="office-slide js-office-slide _opened">
+              <div class="office-slide__header">
+                <p class="office-slide__header__h">Ваш последний заказ №0121 <span class="office-slide__header__h__muted">от 20 марта 2022 года</span>
+                </p><span class="office-slide__header__status _progress">Выполняется</span>
+                <button class="office-slide__header__btn js-office-slide__toggler">
+                      <svg class="svgsprite _slide-arrow">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#slide-arrow"></use>
+                      </svg>
+                </button>
+              </div>
+              <div class="office-slide__content js-office-slide__content">
+                <div class="office-product"><a class="office-product__photo" href="#"><span class="office-product__picture-wrapper">
+                      <picture class="office-product__picture">
+                        <source type="image/webp" data-srcset="assets/img/catalog/1.webp" srcset="assets/img/dot.webp"><img class="lazyload" data-src="assets/img/catalog/1.png" src="assets/img/dot.png" alt="">
+                      </picture></span></a>
+                  <div class="office-product__content">
+                    <div class="office-product__info"><a class="office-product__h" href="#">Хоккейный свитер ХК Торпедо НН, "Estd.1946"</a>
+                      <div class="office-product__cat">Atributika&Club</div>
+                    </div>
+                    <div class="office-product__size">XS (RU 40/42) </div>
+                    <div class="office-product__price">4 500 ₽</div>
+                  </div>
+                </div>
+                <div class="office-product"><a class="office-product__photo" href="#"><span class="office-product__picture-wrapper">
+                      <picture class="office-product__picture">
+                        <source type="image/webp" data-srcset="assets/img/catalog/9.webp" srcset="assets/img/dot.webp"><img class="lazyload" data-src="assets/img/catalog/9.png" src="assets/img/dot.png" alt="">
+                      </picture></span></a>
+                  <div class="office-product__content">
+                    <div class="office-product__info"><a class="office-product__h" href="#">Бейсболка ХК Торпедо НН с 3D‑вышивкой</a>
+                      <div class="office-product__cat">Atributika&Club</div>
+                    </div>
+                    <div class="office-product__price">1 200 ₽</div>
+                  </div>
+                </div>
+                <div class="office-slide__info">
+                  <div class="office-slide__info__section">
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Доставка курьером, Яндекс Доставка</span><span class="office-slide__info__dd">г. Нижний Новгород, ул. Мещерский б-в, д. 2</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Оплата</span><span class="office-slide__info__dd">Оплата на сайте</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Сроки доставки</span><span class="office-slide__info__dd">15 декабря</span></div>
+                  </div>
+                  <div class="office-slide__info__section">
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Получатель</span><span class="office-slide__info__dd">Ильин Иван Петрович</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Электронная почта</span><span class="office-slide__info__dd">ilyin.ivan788@gmail.com</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Мобильный телефон</span><span class="office-slide__info__dd">+7 920 999-99-99</span></div>
+                  </div>
+                  <div class="office-slide__info__section _price">
+                    <div class="office-slide__info__row _price"><span class="office-slide__info__dt">Скидка:</span><span class="office-slide__info__dd">-200 ₽</span></div>
+                    <div class="office-slide__info__row _price"><span class="office-slide__info__dt">Доставка:</span><span class="office-slide__info__dd">Бесплатно</span></div>
+                    <div class="office-slide__info__row _price _total"><span class="office-slide__info__dt">Итого:</span><span class="office-slide__info__dd">4 400 ₽</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="office-slide js-office-slide">
+              <div class="office-slide__header">
+                <p class="office-slide__header__h">Заказ №0114 <span class="office-slide__header__h__muted">от 10 марта 2022 года</span>
+                </p><span class="office-slide__header__status _finished">Завершен</span>
+                <button class="office-slide__header__btn js-office-slide__toggler">
+                      <svg class="svgsprite _slide-arrow">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#slide-arrow"></use>
+                      </svg>
+                </button>
+              </div>
+              <div class="office-slide__content js-office-slide__content">
+                <div class="office-product"><a class="office-product__photo" href="#"><span class="office-product__picture-wrapper">
+                      <picture class="office-product__picture">
+                        <source type="image/webp" data-srcset="assets/img/catalog/1.webp" srcset="assets/img/dot.webp"><img class="lazyload" data-src="assets/img/catalog/1.png" src="assets/img/dot.png" alt="">
+                      </picture></span></a>
+                  <div class="office-product__content">
+                    <div class="office-product__info"><a class="office-product__h" href="#">Хоккейный свитер ХК Торпедо НН, "Estd.1946"</a>
+                      <div class="office-product__cat">Atributika&Club</div>
+                    </div>
+                    <div class="office-product__size">XS (RU 40/42) </div>
+                    <div class="office-product__price">4 500 ₽</div>
+                  </div>
+                </div>
+                <div class="office-product"><a class="office-product__photo" href="#"><span class="office-product__picture-wrapper">
+                      <picture class="office-product__picture">
+                        <source type="image/webp" data-srcset="assets/img/catalog/9.webp" srcset="assets/img/dot.webp"><img class="lazyload" data-src="assets/img/catalog/9.png" src="assets/img/dot.png" alt="">
+                      </picture></span></a>
+                  <div class="office-product__content">
+                    <div class="office-product__info"><a class="office-product__h" href="#">Бейсболка ХК Торпедо НН с 3D‑вышивкой</a>
+                      <div class="office-product__cat">Atributika&Club</div>
+                    </div>
+                    <div class="office-product__price">1 200 ₽</div>
+                  </div>
+                </div>
+                <div class="office-slide__info">
+                  <div class="office-slide__info__section">
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Доставка курьером, Яндекс Доставка</span><span class="office-slide__info__dd">г. Нижний Новгород, ул. Мещерский б-в, д. 2</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Оплата</span><span class="office-slide__info__dd">Оплата на сайте</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Сроки доставки</span><span class="office-slide__info__dd">15 декабря</span></div>
+                  </div>
+                  <div class="office-slide__info__section">
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Получатель</span><span class="office-slide__info__dd">Ильин Иван Петрович</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Электронная почта</span><span class="office-slide__info__dd">ilyin.ivan788@gmail.com</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Мобильный телефон</span><span class="office-slide__info__dd">+7 920 999-99-99</span></div>
+                  </div>
+                  <div class="office-slide__info__section _price">
+                    <div class="office-slide__info__row _price"><span class="office-slide__info__dt">Скидка:</span><span class="office-slide__info__dd">-200 ₽</span></div>
+                    <div class="office-slide__info__row _price"><span class="office-slide__info__dt">Доставка:</span><span class="office-slide__info__dd">Бесплатно</span></div>
+                    <div class="office-slide__info__row _price _total"><span class="office-slide__info__dt">Итого:</span><span class="office-slide__info__dd">4 400 ₽</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="office-slide js-office-slide">
+              <div class="office-slide__header">
+                <p class="office-slide__header__h">Заказ №011 <span class="office-slide__header__h__muted">от 1 апреля 2022 года</span>
+                </p><span class="office-slide__header__status _canceled">Отменен</span>
+                <button class="office-slide__header__btn js-office-slide__toggler">
+                      <svg class="svgsprite _slide-arrow">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#slide-arrow"></use>
+                      </svg>
+                </button>
+              </div>
+              <div class="office-slide__content js-office-slide__content">
+                <div class="office-product"><a class="office-product__photo" href="#"><span class="office-product__picture-wrapper">
+                      <picture class="office-product__picture">
+                        <source type="image/webp" data-srcset="assets/img/catalog/1.webp" srcset="assets/img/dot.webp"><img class="lazyload" data-src="assets/img/catalog/1.png" src="assets/img/dot.png" alt="">
+                      </picture></span></a>
+                  <div class="office-product__content">
+                    <div class="office-product__info"><a class="office-product__h" href="#">Хоккейный свитер ХК Торпедо НН, "Estd.1946"</a>
+                      <div class="office-product__cat">Atributika&Club</div>
+                    </div>
+                    <div class="office-product__size">XS (RU 40/42) </div>
+                    <div class="office-product__price">4 500 ₽</div>
+                  </div>
+                </div>
+                <div class="office-product"><a class="office-product__photo" href="#"><span class="office-product__picture-wrapper">
+                      <picture class="office-product__picture">
+                        <source type="image/webp" data-srcset="assets/img/catalog/9.webp" srcset="assets/img/dot.webp"><img class="lazyload" data-src="assets/img/catalog/9.png" src="assets/img/dot.png" alt="">
+                      </picture></span></a>
+                  <div class="office-product__content">
+                    <div class="office-product__info"><a class="office-product__h" href="#">Бейсболка ХК Торпедо НН с 3D‑вышивкой</a>
+                      <div class="office-product__cat">Atributika&Club</div>
+                    </div>
+                    <div class="office-product__price">1 200 ₽</div>
+                  </div>
+                </div>
+                <div class="office-slide__info">
+                  <div class="office-slide__info__section">
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Доставка курьером, Яндекс Доставка</span><span class="office-slide__info__dd">г. Нижний Новгород, ул. Мещерский б-в, д. 2</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Оплата</span><span class="office-slide__info__dd">Оплата на сайте</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Сроки доставки</span><span class="office-slide__info__dd">15 декабря</span></div>
+                  </div>
+                  <div class="office-slide__info__section">
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Получатель</span><span class="office-slide__info__dd">Ильин Иван Петрович</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Электронная почта</span><span class="office-slide__info__dd">ilyin.ivan788@gmail.com</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Мобильный телефон</span><span class="office-slide__info__dd">+7 920 999-99-99</span></div>
+                  </div>
+                  <div class="office-slide__info__section _price">
+                    <div class="office-slide__info__row _price"><span class="office-slide__info__dt">Скидка:</span><span class="office-slide__info__dd">-200 ₽</span></div>
+                    <div class="office-slide__info__row _price"><span class="office-slide__info__dt">Доставка:</span><span class="office-slide__info__dd">Бесплатно</span></div>
+                    <div class="office-slide__info__row _price _total"><span class="office-slide__info__dt">Итого:</span><span class="office-slide__info__dd">4 400 ₽</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="office-slide js-office-slide">
+              <div class="office-slide__header">
+                <p class="office-slide__header__h">Заказ №01 <span class="office-slide__header__h__muted">от 31 декабря 1985 года</span>
+                </p><span class="office-slide__header__status _finished">Завершен</span>
+                <button class="office-slide__header__btn js-office-slide__toggler">
+                      <svg class="svgsprite _slide-arrow">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#slide-arrow"></use>
+                      </svg>
+                </button>
+              </div>
+              <div class="office-slide__content js-office-slide__content">
+                <div class="office-product"><a class="office-product__photo" href="#"><span class="office-product__picture-wrapper">
+                      <picture class="office-product__picture">
+                        <source type="image/webp" data-srcset="assets/img/catalog/1.webp" srcset="assets/img/dot.webp"><img class="lazyload" data-src="assets/img/catalog/1.png" src="assets/img/dot.png" alt="">
+                      </picture></span></a>
+                  <div class="office-product__content">
+                    <div class="office-product__info"><a class="office-product__h" href="#">Хоккейный свитер ХК Торпедо НН, "Estd.1946"</a>
+                      <div class="office-product__cat">Atributika&Club</div>
+                    </div>
+                    <div class="office-product__size">XS (RU 40/42) </div>
+                    <div class="office-product__price">4 500 ₽</div>
+                  </div>
+                </div>
+                <div class="office-product"><a class="office-product__photo" href="#"><span class="office-product__picture-wrapper">
+                      <picture class="office-product__picture">
+                        <source type="image/webp" data-srcset="assets/img/catalog/9.webp" srcset="assets/img/dot.webp"><img class="lazyload" data-src="assets/img/catalog/9.png" src="assets/img/dot.png" alt="">
+                      </picture></span></a>
+                  <div class="office-product__content">
+                    <div class="office-product__info"><a class="office-product__h" href="#">Бейсболка ХК Торпедо НН с 3D‑вышивкой</a>
+                      <div class="office-product__cat">Atributika&Club</div>
+                    </div>
+                    <div class="office-product__price">1 200 ₽</div>
+                  </div>
+                </div>
+                <div class="office-slide__info">
+                  <div class="office-slide__info__section">
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Доставка курьером, Яндекс Доставка</span><span class="office-slide__info__dd">г. Нижний Новгород, ул. Мещерский б-в, д. 2</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Оплата</span><span class="office-slide__info__dd">Оплата на сайте</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Сроки доставки</span><span class="office-slide__info__dd">15 декабря</span></div>
+                  </div>
+                  <div class="office-slide__info__section">
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Получатель</span><span class="office-slide__info__dd">Ильин Иван Петрович</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Электронная почта</span><span class="office-slide__info__dd">ilyin.ivan788@gmail.com</span></div>
+                    <div class="office-slide__info__row"><span class="office-slide__info__dt">Мобильный телефон</span><span class="office-slide__info__dd">+7 920 999-99-99</span></div>
+                  </div>
+                  <div class="office-slide__info__section _price">
+                    <div class="office-slide__info__row _price"><span class="office-slide__info__dt">Скидка:</span><span class="office-slide__info__dd">-200 ₽</span></div>
+                    <div class="office-slide__info__row _price"><span class="office-slide__info__dt">Доставка:</span><span class="office-slide__info__dd">Бесплатно</span></div>
+                    <div class="office-slide__info__row _price _total"><span class="office-slide__info__dt">Итого:</span><span class="office-slide__info__dd">4 400 ₽</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block"><a class="promo" href="#"><span class="promo__inner">
+              <picture class="promo__picture"> 
+                <source media="(min-width:1280px)" type="image/webp" data-srcset="assets/img/promo-lg.webp" srcset="assets/img/dot.webp">
+                <source media="(min-width:768px)" type="image/webp" data-srcset="assets/img/promo-md.webp" srcset="assets/img/dot.webp">
+                <source type="image/webp" data-srcset="assets/img/promo-sm.webp" srcset="assets/img/dot.webp">
+                <source media="(min-width:1280)" data-srcset="assets/img/promo-lg.jpg" srcset="assets/img/dot.jpg">
+                <source media="(min-width:768px)" data-srcset="assets/img/promo-md.jpg" srcset="assets/img/dot.jpg"><img class="lazyload" data-src="assets/img/promo-sm.jpg" src="assets/img/dot.jpg" alt="">
+              </picture><span class="promo__content">Распродажа <br>-25% на все футболки</span><span class="promo__link">Перейти в каталог футболок</span></span></a></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav">
+          <div class="footer__menu"> <a class="footer__menu__link" href="#">Мужчинам</a>
+            <div class="footer__menu-sub"><a class="footer__menu-sub__link" href="#">Брюки и шорты</a><a class="footer__menu-sub__link" href="#">Верхняя одежда</a><a class="footer__menu-sub__link" href="#">Толстовки и худи</a><a class="footer__menu-sub__link" href="#">Футболки и поло</a><a class="footer__menu-sub__link" href="#">Головные уборы</a><a class="footer__menu-sub__link" href="#">Реплики хоккейных свитеров</a>
+            </div>
+          </div>
+          <div class="footer__menu"> <a class="footer__menu__link" href="#">Женщинам</a>
+            <div class="footer__menu-sub"><a class="footer__menu-sub__link" href="#">Головные уборы</a><a class="footer__menu-sub__link" href="#">Брюки</a><a class="footer__menu-sub__link" href="#">Толстовки</a><a class="footer__menu-sub__link" href="#">Футболки</a><a class="footer__menu-sub__link" href="#">Реплики хоккейных свитеров</a>
+            </div>
+          </div>
+          <div class="footer__menu"> <a class="footer__menu__link" href="#">Детям</a>
+            <div class="footer__menu-sub"><a class="footer__menu-sub__link" href="#">Брюки, шорты</a><a class="footer__menu-sub__link" href="#">Верхняя одежда</a><a class="footer__menu-sub__link" href="#">Лонгсливы и свитшоты</a><a class="footer__menu-sub__link" href="#">Спортивные костюмы</a><a class="footer__menu-sub__link" href="#">Футболки и поло</a><a class="footer__menu-sub__link" href="#">Реплики хоккейных свитеров</a><a class="footer__menu-sub__link" href="#">Головные уборы</a><a class="footer__menu-sub__link" href="#">Для младенцев</a>
+            </div>
+          </div>
+          <div class="footer__menu"> <a class="footer__menu__link" href="#">Джерси</a>
+            <div class="footer__menu-sub"><a class="footer__menu-sub__link" href="#">Джерси Игрока</a><a class="footer__menu-sub__link" href="#">Джерси Персональный</a><a class="footer__menu-sub__link" href="#">Джерси Ретро</a>
+            </div><a class="footer__menu__link" href="#">Сувениры</a><a class="footer__menu__link" href="#">Аксессуары</a>
+          </div>
+        </nav>
+        <div class="footer__contacts"> 
+          <div class="footer__contacts__left"><a class="footer__contacts__link" href="#">Оплата</a><a class="footer__contacts__link" href="#">Доставка</a><a class="footer__contacts__link" href="#">Контакты</a></div>
+          <div class="footer__contacts__right"><a class="footer__contacts__phone" href="tel:+79307111946">+7 (930) 711-19-46</a><span class="footer__contacts__address">Нижний Новгород, пр-т Гагарина 29</span></div>
+        </div>
+        <div class="footer__notice"><span class="footer__notice__h">Ближайший матч Торпедо</span><span class="footer__notice__content"><span class="footer__notice__team"><img class="lazyload footer__notice__team__logo" data-src="assets/img/teams/torpedo.svg" src="assets/img/dot.svg" alt="">Торпедо</span><span class="footer__notice__content__inner"> <span class="footer__notice__date">4 марта, ср, 17:00</span><span class="footer__notice__place">Нижний Новгород, КРК «Нагорный»</span></span><span class="footer__notice__team"><img class="lazyload footer__notice__team__logo" data-src="assets/img/teams/ska.svg" src="assets/img/dot.svg" alt="">СКА</span></span><a class="btn _secondary _arrow footer__notice__btn" href="#"><i class="icon-ticket"> </i>Купить билеты</a></div>
+        <div class="footer__social"><span class="footer__social__text">Следить за нами в социальных сетях:</span><span class="footer__social__list"><span class="footer__social__list__item"><a class="footer__social__link" href="#" target="_blank" title="vk"><i class="icon-vk"></i></a></span><span class="footer__social__list__item"><a class="footer__social__link" href="#" target="_blank" title="tiktok"><i class="icon-tiktok"></i></a></span><span class="footer__social__list__item"><a class="footer__social__link" href="#" target="_blank" title="instagram"><i class="icon-instagram"></i></a></span><span class="footer__social__list__item"><a class="footer__social__link" href="#" target="_blank" title="telegram"><i class="icon-telegram"></i></a></span><span class="footer__social__list__item"><a class="footer__social__link" href="#" target="_blank" title="facebook"><i class="icon-facebook"></i></a></span><span class="footer__social__list__item"><a class="footer__social__link" href="#" target="_blank" title="twitter"><i class="icon-twitter"></i></a></span><span class="footer__social__list__item"><a class="footer__social__link" href="#" target="_blank" title="ok"><i class="icon-ok"></i></a></span><span class="footer__social__list__item"><a class="footer__social__link" href="#" target="_blank" title="youtube"><i class="icon-youtube"></i></a></span></span></div>
+        <div class="footer__legacy">
+          <div class="footer__legacy__text">
+            <p>2003-2022 Автономная некоммерческая организация Хоккейный клуб «Торпедо»</p>
+            <p>Оператор по организации продажи билетов АНО ХК «Торпедо»</p>
+            <p>Использование фото и видео материалов допускается только с согласия пресс-службы.</p>
+          </div>
+          <div class="footer__legacy__foot"><span class="footer__legacy__foot__left">Билетная система - <span class="footer__legacy__accent">ООО «ИнфоТех» ®</span></span><span class="footer__legacy__foot__right"><a class="footer__legacy__link" href="#">Политика обработки персональных данных</a><a class="footer__legacy__link" href="#">Политика конфиденциальности</a></span></div>
+        </div>
+      </div>
+    </footer>
+    <div class="hidden">
+      <div class="popup" id="login">
+        <div class="login">
+          <h3 class="login__h">Вход на сайт</h3>
+          <form class="login__form">
+            <div class="input">
+              <input required>
+              <label>Введите логин</label>
+            </div>
+            <div class="input">
+              <input type="password" required>
+              <label>Введите пароль</label>
+            </div>
+            <button class="btn _arrow">Войти</button>
+          </form>
+          <div class="login__footer">
+            <button class="js-popup login__link" data-href="#reset">Я забыл пароль</button>
+            <button class="js-popup login__link" data-href="#register">У меня нет аккаунта</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="register">
+        <div class="login _register">
+          <h3 class="login__h">Регистрация</h3>
+          <form class="login__form">
+            <div class="input">
+              <input required>
+              <label>Введите ваш e-mail</label>
+            </div>
+            <div class="input">
+              <input required>
+              <label>Введите логин</label>
+            </div>
+            <div class="input">
+              <input type="password" required>
+              <label>Введите пароль</label>
+            </div>
+            <div class="input">
+              <input type="password" required>
+              <label>Подтвердите пароль</label>
+            </div>
+            <button class="btn _arrow">Зарегистрироваться</button>
+          </form>
+          <div class="login__footer">
+            <button class="js-popup login__link" data-href="#login">У меня уже есть аккаунт</button>
+          </div>
+          <div class="login__agree">Регистрируясь на сайте, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></div>
+        </div>
+      </div>
+      <div class="popup" id="reset">
+        <div class="login">
+          <h3 class="login__h">Восстановить пароль</h3>
+          <p class="login__lead">Введите e-mail указанный при регистрации, чтобы восстановить доступ и получить ваш пароль</p>
+          <form class="login__form">
+            <div class="input">
+              <input required>
+              <label>Введите ваш e-mail</label>
+            </div>
+            <button class="btn _arrow">Запросить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="assets/css/common.css?v=0.0.1">
+    <link rel="stylesheet" href="assets/css/office.css?v=0.0.1">
+    <script>
+      var appConfig = {
+          /*
+          mapDriver: 'yandex', // yandex or google
+          mapKeyYandex: '', // yandex maps api key
+          mapKeyGoogle: '', // google maps api key
+          mapMarkerPath: 'assets/img/map/', // path to markers folder - your/server/asset/templates/torpedo/assets/img/map/
+          incartTimeout: 5000, // header in-cart popup close timeout
+          */
+      }
+    </script>
+    <script src="assets/js/vendors~app.bundle.js"></script>
+    <script src="assets/js/app.bundle.js?v=0.0.1"></script>
+    <script src="assets/js/office.bundle.js?v=0.0.1"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+.order-created-info {
+    background-color: #fff;
+    padding: 32px 36px 8px;
+    margin-bottom: 36px;
+}
+
+.order-created-info__title {
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #0C1931;
+    margin: 0 0 32px;
+}
+
+.order-created-info__list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 24px;
+    display: grid;
+    grid-gap: 8px;
+}
+
+.order-created-info__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-created-info__total-text {
+    padding-bottom: 8px;
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #0C1931;
+    margin: 0;
+}
+
+.order-created-info__total-price {
+    padding-bottom: 8px;
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.27;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #16223A;
+    margin: 0;
+}
+
+.order-created-info__text {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #8D97A8;
+    margin: 0;
+}
+
+.order-created-info__price {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: right;
+    color: #0C1931;
+    margin: 0;
+}
+
+.order-created-info__price_minus {
+    color: #C8102E;
+}
+
+.order-created-info__block {
+    padding: 24px 0;
+    border-top: 1px solid rgba(12, 25, 49, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-created-info__text-title {
+    font-family: 'Halvar Engschrift', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #0C1931;
+    opacity: 0.5;
+    margin: 0 10px 0 0;
+}
+
+.order-created-info__text-choice {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #16223A;
+    margin: 0;
+}
+
+/* Mobile
+-----------------------------------------------------------*/
+
+@media screen and (max-width:1479px) {
+    .order-created-info {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .order-created-info {
+        padding: 24px 24px 8px;
+    }
+
+    .order-created-info__title {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+
+    .order-created-info__total-price {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .order-created-info__text-choice {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:524px) {
+    .order-created-info {
+        padding: 22px 22px 6px;
+    }
+
+    .order-created-info__title {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+
+    .order-created-info__block {
+        display: grid;
+        grid-gap: 4px;
+    }
+}
